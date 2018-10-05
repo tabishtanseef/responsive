@@ -1,0 +1,339 @@
+html, body {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	 font-family: 'Salsa', cursive;
+	 overflow: hidden;
+}
+.wrapper{
+	background-color: green;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	
+}
+
+
+.btn {
+   -webkit-user-select: none;
+	-webkit-transition: background .2s .1s;
+	transition: background .2s .1s;
+	border: 2px #FF6F00 solid;
+	-webkit-border-radius: 3px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-tap-highlight-color: transparent;
+	z-index: 0;
+	background-color: #D32F2F;
+	color: #fff;
+	line-height: 20px;
+	padding: 10px 20px;
+	margin: 5px 10px;
+	font-family: 'Salsa', cursive;
+	letter-spacing: 0.5px;
+	box-shadow: 0px 0px 5px 0px rgb(244, 67, 54);
+}
+.btn:hover {
+    background-color: #B71C1C;
+}
+.header {
+   width: 100%;
+   padding: 10px 0;
+   text-align: center;
+   font-size: 25px;
+   color: #000;
+   transition: all .2s ease-in;
+   background: rgba(255, 255, 255, 0.4);
+}
+
+.footer {
+    width: 100%;
+    /* background: #ffffff; */
+    box-sizing: border-box;
+    text-align: center;
+    /* color: #FFF; */
+}
+
+.title-h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.content {
+	margin: 20px auto 0;
+	z-index: 9;
+	position: relative;
+	transition: all .2s ease-in;
+}
+
+.button-wrapper {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.body-container {
+       width: 100%;
+       max-width: 1024px;
+       margin: auto;
+       position: relative;
+       /* padding: 10px; */
+       box-sizing: border-box;
+       /* margin-bottom: 48px; */
+}
+
+ 
+
+.question-section ol {
+    list-style: decimal;
+    list-style-position: outside;
+    margin: 0px 20px 0px 60px;
+    position: relative;
+}
+
+.sub-header {
+        padding: 6px 10px;
+        text-align: center;
+        color: #C62828;
+        font-weight: bold;
+        font-size: 15px;
+        background: rgba(255, 255, 255, 0.6);
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top:-26px;
+}
+
+.question-section-wrap {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+	min-height: 158px;
+}
+
+.question-section ol li {
+        margin: 10px 0px;
+        font-size: 22px;
+        position: relative;
+        padding: 15px 20px;
+        transition: all .2s ease-in;
+        line-height: normal;
+}
+
+.btn:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+.question-section input[type="text"] {
+    background: #fdfce2;
+    border: none;
+    font-size: 20px;
+    height: 25px;
+    text-align: center;
+    width: 170px;
+    padding: 4px;
+    border: 1px solid black;
+    background: #FFF;
+    font-family: 'Salsa', cursive;
+}
+
+
+.img-submit {
+    width: 28px;
+    position: absolute;
+    left: -59px;
+    display: none;
+    top:0px;
+}
+
+.attempt-correct .img-submit.img-correct{
+	display: block; 
+}
+
+.attempt-incorrect .img-submit.img-incorrect {
+	display: block; 
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.37);
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+	display: none;
+}
+
+.modal-container {
+    width: 400px;
+    min-height: 200px;
+    position: absolute;
+    background: #FFF;
+    text-align: center;
+    background: white;
+    left: 50%;
+    top: 20%;
+    margin-left: -200px;
+    padding: 20px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
+
+.modal-content {
+    min-height: 120px;
+}
+
+.question-section .attempt-correct input[type="text"][readonly] {
+    background: #dafff1;
+}
+
+.question-section .static-ans input[type="text"][readonly] {
+    background: #EF5350;
+    color: white;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    border-color: white;
+    cursor: default;
+}
+
+.feedback-text {
+	font-size: 28px;
+	width: 60%;
+}
+
+.input-uppercase input[type="text"] {
+	text-transform: uppercase;
+}
+
+.input-lowercase input[type="text"] {
+	text-transform: lowercase;
+}
+
+
+.duration1s { animation-duration: 1s; }
+.duration2s { animation-duration: 2s; }
+.duration3s { animation-duration: 3s; }
+.duration4s { animation-duration: 4s; }
+.duration5s { animation-duration: 5s; }
+.duration6s { animation-duration: 6s; }
+.duration7s { animation-duration: 7s; }
+.duration8s { animation-duration: 8s; }
+.duration9s { animation-duration: 9s; }
+.duration10s { animation-duration: 10s; }
+
+
+.title-h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:1190px){
+	.feedback-text {
+		/* right: 0 !important; */
+		/* bottom: -60px !important; */
+	}
+}
+
+@media (max-width: 768px) {
+	.question-section ol li {
+		margin: 10px 0px;
+		padding: 10px;
+	}
+
+	.body-container {
+		margin-top: auto;
+	}
+
+	.header {
+		position: relative;
+		height: auto;
+	}
+
+	.content {
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+@media (max-width: 400px) {
+	.question-section ol li {
+		font-size: 16px;
+	}
+
+	.question-section ol {
+		margin: 0px 10px 0px 40px;
+	}
+
+	.question-section input[type="text"] {
+		font-size: 14px;
+		height: 17px;
+		width: 28px;
+	}
+
+	.btn {
+		padding: 5px;
+		font-size: 12px;
+	}
+
+	.header {
+		font-size: 20px;
+		padding: 10px 0px;
+	}
+
+	.sub-header {
+		padding: 5px;
+	}
+
+	.title-h4 {
+		font-size: 18px;
+	}
+
+	.question-section {
+		padding: 5px;
+	}
+
+	.btn {
+		margin-bottom: 5px;
+	}
+	
+	.attempt-incorrect .img-submit.img-incorrect, .attempt-correct .img-submit.img-correct {
+		top: 12px;
+		left: -36px;
+		width: 13px;
+	}
+	
+	.modal-container {
+		top: 1%;
+		width: 98%;
+		margin-left: 1%;
+		left: 0%;
+	}
+}
+
+.feedback-text {
+    /* position: absolute; */
+    /* left: 80px; */
+    /* bottom: -155px; */
+}
+
+.feedback-text img {
+    width: 150px;
+    max-width: 100%;
+}
